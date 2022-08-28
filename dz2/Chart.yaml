@@ -1,0 +1,15 @@
+apiVersion: v2
+name: dz2
+description: Otus dz2
+
+type: application
+version: 0.1.0
+appVersion: "1.16.0"
+
+dependencies:
+  - name: postgresql
+    version: 11.1.3
+    repository: https://charts.bitnami.com/bitnami
+    condition: postgresql.enabled
+    tags:
+      - myapp-database
